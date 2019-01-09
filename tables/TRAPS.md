@@ -1,9 +1,3 @@
-Mock API Files...
-=================
-
-Hosted in a GCS bucket https://console.cloud.google.com/storage/browser/replaypoker-dummy-api?project=replay-gaming
-
-
 Traps and Pitfalls
 ==================
 

@@ -1,0 +1,17 @@
+{
+  "id": 5,
+  "state": "open",
+  "game": "holdem",
+  "blinds": {
+    "small": 50,
+    "big": 100
+  },
+  "seats": [
+    { "id": 0, "state": "occupied", "username": "Madonna", "chips": 50000 },
+    { "id": 1, "state": "available" },
+    { "id": 2, "state": "available" },
+    { "id": 3, "state": "available" },
+    { "id": 4, "state": "available" },
+    { "id": 5, "state": "available" }
+  ]
+}

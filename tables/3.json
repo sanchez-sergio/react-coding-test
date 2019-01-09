@@ -1,0 +1,27 @@
+{
+  "id": 3,
+  "state": "open",
+  "game": "holdem",
+  "blinds": {
+    "small": 5,
+    "big": 10
+  },
+  "seats": [
+    { "id": 0, "state": "occupied", "username": "Mick", "chips": 2736 },
+    { "id": 1, "state": "occupied", "username": "Keith", "chips": 4103 },
+    { "id": 2, "state": "occupied", "username": "Charlie", "chips": 2875 },
+    { "id": 3, "state": "occupied", "username": "Brian", "chips": 4718 }
+  ],
+  "currentHand": {
+    "id": 56869,
+    "communityCards": ["Qs", "2c", "6c"],
+    "players": [
+      { "seatId": 0, "cards": ["X", "X"], "bet": 50 },
+      { "seatId": 1, "cards": ["X", "X"], "bet": 0 },
+      { "seatId": 3, "cards": ["4h", "6s"], "bet": 0 }
+    ],
+    "pots": [
+      { "chips": 30, "seatIds": [0, 1, 3] }
+    ]
+  }
+}

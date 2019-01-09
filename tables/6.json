@@ -1,0 +1,29 @@
+{
+  "id": 6,
+  "state": "open",
+  "game": "omaha_hilo",
+  "blinds": {
+    "small": 10,
+    "big": 20
+  },
+  "seats": [
+    { "id": 0, "state": "occupied", "username": "Larry", "chips": 57788 },
+    { "id": 1, "state": "occupied", "username": "Devlin", "chips": 34  },
+    { "id": 2, "state": "available" },
+    { "id": 3, "state": "occupied", "username": "D Wayne", "chips": 45823 },
+    { "id": 4, "state": "occupied", "username": "Harpo", "chips": 58573 },
+    { "id": 5, "state": "occupied", "username": "Spirit", "chips": 86384 }
+  ],
+  "currentHand": {
+    "id": 53986,
+    "communityCards": [],
+    "players": [
+      { "seatId": 0, "bet": 0 },
+      { "seatId": 1, "bet": 0 },
+      { "seatId": 3, "bet": 0 },
+      { "seatId": 4, "bet": 10 },
+      { "seatId": 5, "bet": 0 }
+    ],
+    "pots": []
+  }
+}
