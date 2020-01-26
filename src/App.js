@@ -1,22 +1,22 @@
-import React, { Component } from 'react';
-import { tableShape } from './types';
+import { createBrowserHistory } from "history";
+import React, { Component } from "react";
+import { Route, Router, Switch } from "react-router-dom";
 
-import Table from './components/Table';
+import "./App.css";
+import TableView from "./views/TableView";
 
-import './App.css';
+const history = createBrowserHistory();
 
 class App extends Component {
-  static propTypes = {
-    table: tableShape.isRequired,
-  }
-
   render() {
-    const { table } = this.props;
-
     return (
-      <div className="App">
-        <Table table={table} />
-      </div>
+      <Router history={history}>
+        <Switch>
+          <Route path="/table/:tableId">
+            <TableView />
+          </Route>
+        </Switch>
+      </Router>
     );
   }
 }
