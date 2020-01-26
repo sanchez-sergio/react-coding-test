@@ -12,7 +12,7 @@ const Seat = ({ id, state, username, chips, cards, bet }) => (
       username ? (
         <div className="nameplate">
           <div className="username">{username}</div>
-          <div className="chips">{(bet > 0 && chips < 0) ? 'All-In' : chips}</div>
+          <div className="chips">{(bet > 0 && chips < 0) ? 'All-In' : chips.toLocaleString()}</div>
         </div>
       ) : (
         <div className="nameplate available">
