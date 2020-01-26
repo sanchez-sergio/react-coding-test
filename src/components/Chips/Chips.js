@@ -8,9 +8,9 @@ const Chips = ({ amount }) => {
 
   return (
     <div className="Chips">
-      {amount}
+      {amount.toLocaleString()}
     </div>
   );
-}
+};
 
 export default Chips;
