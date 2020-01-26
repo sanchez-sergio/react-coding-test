@@ -1,14 +1,10 @@
-import React from "react";
+import React from 'react';
 
-const API = "https://storage.googleapis.com/replaypoker-dummy-api/tables";
+const API = 'https://storage.googleapis.com/replaypoker-dummy-api/tables';
 
 export function withTableData(Component) {
   return class WithTableData extends React.Component {
-    state = {
-      table: {},
-      loadingTable: true,
-      errorLoadingTable: null
-    };
+    state = { table: {}, loadingTable: true, errorLoadingTable: null };
 
     componentDidMount() {
       const tableId = this.props.match.params.tableId;
@@ -18,13 +14,11 @@ export function withTableData(Component) {
           if (response.ok) {
             return response.json();
           } else {
-            throw new Error("An error occurred while fetching the table data");
+            throw new Error('An error occurred while fetching the table data');
           }
         })
         .then(data => this.setState({ table: data, loadingTable: false }))
-        .catch(error =>
-          this.setState({ errorLoadingTable: error, loadinTable: false })
-        );
+        .catch(error => this.setState({ errorLoadingTable: error, loadinTable: false }));
     }
 
     render() {
@@ -38,10 +32,7 @@ export function withTableData(Component) {
         return <p>Loading...</p>;
       }
 
-      const props = {
-        table,
-        ...this.props
-      };
+      const props = { table, ...this.props };
       return <Component {...props} />;
     }
   };
